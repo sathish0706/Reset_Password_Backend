@@ -7,7 +7,7 @@ const userRoute = require("./Routes/user.routes");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({ origin: "https://main--unique-liger-424e05.netlify.app", credentials: true }));
 
 db();
 
